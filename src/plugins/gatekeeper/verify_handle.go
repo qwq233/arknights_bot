@@ -5,7 +5,7 @@ import (
 	"arknights_bot/utils"
 	"crypto/rand"
 	"fmt"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"log"
 	"math/big"
 	"time"

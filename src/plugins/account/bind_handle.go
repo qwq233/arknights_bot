@@ -6,8 +6,8 @@ import (
 	"arknights_bot/utils"
 	"encoding/json"
 	"fmt"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
 	gonanoid "github.com/matoous/go-nanoid/v2"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 )
 
 // BindHandle 绑定角色

@@ -5,7 +5,7 @@ import (
 	"arknights_bot/plugins/skland"
 	"arknights_bot/utils"
 	"encoding/json"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 )
 
 // SetTokenHandle 重设token

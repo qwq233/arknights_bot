@@ -3,8 +3,8 @@ package enemy
 import (
 	bot "arknights_bot/config"
 	"arknights_bot/utils"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
 	gonanoid "github.com/matoous/go-nanoid/v2"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"strings"
 )
 
