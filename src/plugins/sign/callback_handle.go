@@ -3,7 +3,7 @@ package sign
 import (
 	"arknights_bot/plugins/account"
 	"arknights_bot/utils"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"strconv"
 	"strings"
 )

@@ -2,7 +2,7 @@ package utils
 
 import (
 	"arknights_bot/config"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"log"
 )
 

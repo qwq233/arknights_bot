@@ -5,7 +5,7 @@ import (
 	"arknights_bot/plugins/messagecleaner"
 	"bytes"
 	"fmt"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 )
 
 // ReportHandle 举报

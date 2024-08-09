@@ -8,7 +8,7 @@ import (
 	"arknights_bot/plugins/skland"
 	"arknights_bot/utils"
 	"fmt"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"github.com/spf13/viper"
 	"strings"
 	"time"

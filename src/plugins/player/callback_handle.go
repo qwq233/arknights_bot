@@ -2,7 +2,7 @@ package player
 
 import (
 	"arknights_bot/plugins/commandoperation"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"log"
 	"strings"
 )
