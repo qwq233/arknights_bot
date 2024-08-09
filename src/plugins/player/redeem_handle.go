@@ -8,7 +8,6 @@ import (
 	"arknights_bot/utils"
 	"fmt"
 	tgbotapi "github.com/qwq233/telegram-bot-api"
-	"github.com/spf13/viper"
 	"strings"
 	"time"
 )

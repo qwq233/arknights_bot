@@ -4,7 +4,6 @@ import (
 	bot "arknights_bot/config"
 	"arknights_bot/plugins/account"
 	"arknights_bot/plugins/enemy"
-	"arknights_bot/plugins/gatekeeper"
 	"arknights_bot/plugins/material"
 	"arknights_bot/plugins/operator"
 	"arknights_bot/plugins/player"
@@ -20,14 +19,8 @@ func Serve() {
 	log.Println("机器人启动成功")
 	b := bot.Arknights.AddHandle()
 	bot.Arknights.Debug = viper.GetBool("bot.debug")
-	b.NewProcessor(gatekeeper.JoinRequest, gatekeeper.JoinRequestHandle)
-	b.NewMemberProcessor(gatekeeper.NewMemberHandle)
-	b.LeftMemberProcessor(gatekeeper.LeftMemberHandle)
-	b.NewProcessor(gatekeeper.CheckMember, gatekeeper.KickMember)
 
 	// callback
-	b.NewCallBackProcessor("verify", gatekeeper.CallBackData)
-	b.NewCallBackProcessor("request_verify", gatekeeper.RequestCallBackData)
 	b.NewCallBackProcessor("bind", account.ChoosePlayer)
 	b.NewCallBackProcessor("unbind", account.UnbindPlayer)
 	b.NewCallBackProcessor("sign", sign.SignPlayer)

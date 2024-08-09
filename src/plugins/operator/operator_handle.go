@@ -5,13 +5,8 @@ import (
 	"arknights_bot/plugins/messagecleaner"
 	"arknights_bot/utils"
 	"fmt"
-<<<<<<< HEAD
 	"log"
-
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
-=======
 	tgbotapi "github.com/qwq233/telegram-bot-api"
->>>>>>> 5117e0f (replace telegram-bot-api)
 	"github.com/spf13/viper"
 )
 

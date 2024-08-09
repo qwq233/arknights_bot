@@ -5,7 +5,7 @@ import (
 	"arknights_bot/utils"
 	"encoding/json"
 	"fmt"
-	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	tgbotapi "github.com/qwq233/telegram-bot-api"
 	"time"
 )
 
