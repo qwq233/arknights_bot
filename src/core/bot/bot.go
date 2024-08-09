@@ -18,8 +18,8 @@ import (
 func Serve() {
 	log.Println("机器人启动成功")
 	b := bot.Arknights.AddHandle()
-	b.NewMemberProcessor(gatekeeper.NewMemberHandle)
-	b.LeftMemberProcessor(gatekeeper.LeftMemberHandle)
+	//b.NewMemberProcessor(gatekeeper.NewMemberHandle)
+	//b.LeftMemberProcessor(gatekeeper.LeftMemberHandle)
 
 	// callback
 	b.NewCallBackProcessor("verify", gatekeeper.CallBackData)
