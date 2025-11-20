@@ -19,8 +19,6 @@ func Serve() {
 	log.Println("机器人启动成功")
 	b := bot.Arknights.AddHandle()
 	bot.Arknights.Debug = viper.GetBool("bot.debug")
-
-	// callback
 	b.NewCallBackProcessor("bind", account.ChoosePlayer)
 	b.NewCallBackProcessor("unbind", account.UnbindPlayer)
 	b.NewCallBackProcessor("sign", sign.SignPlayer)
@@ -76,13 +74,15 @@ func Serve() {
 	b.NewReplyMessageProcessor("/recruit", system.ReplyRecruitHandle)
 
 	// 权限
-	b.NewCommandProcessor("update", system.UpdateHandle)
 	b.NewCommandProcessor("news", system.NewsHandle)
 	b.NewCommandProcessor("birthday", system.BirthdayHandle)
 	b.NewCommandProcessor("request_mode", system.RequestModeHandle)
 	b.NewCommandProcessor("reg", system.RegulationHandle)
 	b.NewCommandProcessor("welcome", system.WelcomeHandle)
 	b.NewCommandProcessor("clear", system.ClearHandle)
+	// 仅拥有者
+	b.NewCommandProcessor("update", system.UpdateHandle)
+	b.NewCommandProcessor("sign_all", sign.SignAllHandle)
 	b.NewCommandProcessor("kill", system.KillHandle)
 	b.Run()
 }
